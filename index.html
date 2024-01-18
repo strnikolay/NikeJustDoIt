@@ -5,21 +5,26 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Магазин Nike</title>
+  <title>Nike shop</title>
   <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link rel="stylesheet" href="css/new.css">  
 </head>
 
 <body class="body__main">
 
+  <div class="app-wrapper">
+    <header>
+      <div class="logo">
+        <img class="logo__img" src="./new_img/nike__logo.svg" alt="logo" >
+      </div>
 
-  <header id="main">
-    <div class="logo">
-      <img src="./img/nike__logo.svg" alt="logo" class="logo__img">
-    </div>
+    <!--  Navbar -->
     <nav>
+      <!--<div class="container">-->
         <div class="navbar">
           <div class="menu nav-collapse" >
-            <ul class="menu__list">
+            <ul class="menu_list">
               <li class="list-item"><a data-scroll href="#main">Главная</a></li>
               <li class="list-item"><a data-scroll href="#sale">Акция</a></li>
               <li class="list-item"><a data-scroll href="#shop">МАГАЗИН</a></li>
@@ -35,7 +40,43 @@
           <span></span>
         </div>
       </div>
+      <!--</div>-->
     </nav>
-  <script src="./js/script.js"></script>
+    <!-- Navbar End -->
+  </header>  
+  <section class="first_screen">
+    <div class="container">
+      <div class="header">
+        <div class="header__item second__item">
+          <img class="header__img" src="./new_img/main-foto.png" alt="img">
+        </div>
+        <div class="header__item first__item" >
+          <h1 class="title">Не соглашайся на меньшее</h1>
+          <h2 class="subtitle">Новейшая коллекция кросовок.</h2>
+            <div class="buttons">
+              <a href="#" class="btn btn__img buy__btn"> КУПИТЬ 
+                <img src="./img/left-arrow.svg" alt="arrow">
+              </a>
+              <a href="#" class="btn btn__img shop__btn"> МАГАЗИН 
+                <img src="./img/left-arrow.svg" alt="arrow">
+              </a>
+            </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="social">
+      <a href="#" class="social__item"> <img src="./img/twitter.svg" alt="social"> </a>
+      <a href="#" class="social__item"> <img src="./img/instagram.svg" alt="social"> </a>
+      <a href="#" class="social__item"> <img src="./img/facebook.svg" alt="social"> </a>
+      <a href="#" class="social__item"> <img src="./img/youtube.svg" alt="social"> </a>
+    </div>
+
+  </section>
+
+</div>
+  
+  <script src="./js/scripts.js"></script>
 </body>
 </html>

@@ -1,1 +1,145 @@
 
+.container{max-width:1170px;margin:0 auto;width:100%}
+@media (max-width: 1182px){
+    .container{
+        max-width:970px
+    }
+}
+@media (max-width: 991.98px){
+    .container{
+        max-width:750px
+    }
+}
+@media (max-width: 767.98px){
+    .container{
+        max-width:none;
+        padding:0 10px
+    }
+}
+
+
+nav .navbar{
+    display:flex;
+    width:100%;
+    justify-content:space-between;
+    padding-top:35px
+}
+nav .navbar .menu{
+    display:block
+}
+@media (max-width: 1406px){
+    nav .navbar .menu {
+        margin-left:125px
+    }
+}
+
+nav .navbar .menu_list{
+    display:flex;
+    z-index:1
+}
+nav .navbar .list-item{margin-right:25px;position:relative;z-index:1}
+nav .navbar .list-item:hover::after{width:50px;transition:.5s all ease}
+nav .navbar .list-item::after{position:absolute;content:'';left:-10px;bottom:0px;width:50px;height:1px;background:#FEFEFE;border-radius:30px;width:0}
+
+nav .navbar .list-item a{
+    font-style:normal;font-weight:normal;font-size:18px;line-height:23px;color:#FEFEFE
+}
+
+nav .navbar .list-item:last-child{margin-right:0}.burger{display:none;cursor:pointer}
+
+
+.list.active{
+    position:absolute;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+    top:0;
+    right:0;
+    bottom:0;
+    left:0;
+    background:#1F1E1F;
+    z-index:1;
+    text-align:right;
+    margin:0;
+    padding:0
+}
+
+
+nav .navbar .tel .nav__phone{
+    /*font-family:"Audiowide",cursive;*/
+    font-family:"Poppins-Regular",cursive;
+    font-style:normal;
+    font-weight:normal;
+    font-size:18px;
+    line-height:23px;
+    color:#FEFEFE
+}
+
+@media (max-width: 992px){nav .navbar .tel .nav__phone{display:none}
+}
+
+.first_screen{
+    display: flex;
+}
+/*Надпись внизу первого экрана*/
+.first_screen .container::after{
+    content:'NIKE';
+    position:absolute;
+    font-style:normal;
+    font-weight:normal;
+    font-size:350px;
+    line-height:99.99%;
+    color:rgba(254,254,254,0.1);
+    left:0;
+    bottom:0
+}
+
+
+.header{display:flex;justify-content:space-between}
+
+
+@media (max-width: 374px){header{padding-bottom:140px}}
+@media (max-width: 374px){header .header__item .buttons{flex-direction:column}}
+@media (max-width: 374px){header .header__item .buttons .buy__btn{margin-bottom:15px}}
+
+@media (max-width: 350px){header::before{font-size:75px}}
+
+@media (max-width: 520px){header::before{font-size:100px}}
+
+@media (max-width: 768px){header .header{flex-wrap:wrap}}
+@media (max-width: 768px){header .header__item .title{max-width:100%}}
+@media (max-width: 768px){header .header__item .subtitle{max-width:100%}}
+@media (max-width: 768px){header .social{display:flex;top:65%}}
+@media (max-width: 768px){header .header .first__item{flex:0 0 100%}}
+
+@media (max-width: 768px){header .header .second__item{display:none}}
+
+
+@media (max-width: 851px){header::before{font-size:150px}}
+
+@media (max-width: 992px){header::before{font-size:250px}}
+
+@media (max-width: 1220px){header::before{font-size:300px}}
+@media (max-width: 1220px){header .header .first__item{flex:0 0 40%}}
+@media (max-width: 1220px){header .header .second__item{flex:0 0 60%}}
+
+@media (max-width: 1320px){header .navigation{display:none}}
+@media (max-width: 1320px){header .social{display:none}}
+
+@media (max-width: 1406px){header .navigation{left:-20px}}
+@media (max-width: 1406px){header .social{right:-20px}}
+
+
+.header__item{
+    display:flex;
+    flex-direction:column;
+    flex:0 0 50%
+}
+.header__item .title{font-style:normal;font-weight:normal;font-size:48px;line-height:48px;max-width:310px;width:100%;color:#FEFEFE;margin-top:130px}
+.header__item .subtitle{font-style:normal;font-weight:normal;font-size:18px;line-height:22px;font-family:"Lato",sans-serif;color:#525252;max-width:185px;width:100%;margin-top:13px;margin-bottom:17px}
+
+header .header__item .buttons{display:flex;max-width:325px;justify-content:space-between}
+
+header .header .second__item{position:relative} 
+ 
