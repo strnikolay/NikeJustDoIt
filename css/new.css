@@ -1,0 +1,46 @@
+@font-face {
+  font-family: Terminator;
+  src: url(../font/terminator_cyr.ttf);
+}
+* {
+  box-sizing: border-box;
+  font-family: "Terminator";
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+ul, li {
+  list-style: none;
+}
+
+.body__main {
+  position: relative;
+  background: #161616;
+  display: flex;
+  justify-content: center;
+}
+.body__main .banner {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+}
+.body__main .app-wrapper {
+  max-width: 1920px;
+}
+.body__main .app-wrapper header {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+}
+.body__main .app-wrapper header .logo {
+  left: 20px;
+}
+.body__main .app-wrapper .header__img {
+  width: 500px;
+  height: 250px;
+}/*# sourceMappingURL=new.css.map */
